@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Canvas Maison</title>
+</head>
+<body>
+  <canvas id="mon_canvas" width="400" height="400">
+    Maison
+  </canvas>
+  <script>
+  var c = document.getElementById("mon_canvas");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();      // Début du chemin pour le toit
+  ctx.moveTo(200,50);   // Le tracé part du point
+  ctx.lineTo(300,150);  // Un segment est ajouté
+  ctx.lineTo(100,150);  // Un segment est ajouté
+  ctx.fillStyle = "peru";
+  ctx.fill();            // Application du remplissage
+  ctx.closePath();      // Fermeture du chemin
+  ctx.beginPath();      // Début du chemin murs maison
+  ctx.moveTo(100,150);   // Le tracé part du point
+  ctx.lineTo(100,350);  // Un segment est ajouté
+  ctx.lineTo(300,350);//idem
+  ctx.lineTo(300,150);//idem
+  ctx.fillStyle = "lightblue";//couleur du remplissage
+  ctx.fill();            // Application du remplissage
+  ctx.closePath();//fermeture du chemin
+  ctx.beginPath();      // Début du chemin fenetre gauche
+  ctx.moveTo(125,165);   // Le tracé part du point
+  ctx.lineTo(125,205);  // Un segment est ajouté
+  ctx.lineTo(165,205);//idem
+  ctx.lineTo(165,165);//idem
+  ctx.fillStyle = "#C9C9C9";//couleur de remplissage
+  ctx.fill();            // Application du remplissage
+  ctx.closePath();//fermeture du chemin
+  ctx.beginPath();      // Début du chemin fenetre droite
+  ctx.moveTo(235,165);   // Le tracé part du point
+  ctx.lineTo(235,205);  // Un segment est ajouté vers
+  ctx.lineTo(275,205);//idem
+  ctx.lineTo(275,165);//idem
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fill();            // Application du remplissage
+  ctx.closePath();//fermeture du chemin
+  ctx.beginPath();      // Début du chemin porte
+  ctx.moveTo(165,225);   // Le tracé part du point
+  ctx.lineTo(165,350);  // Un segment est ajouté vers
+  ctx.lineTo(235,350);
+  ctx.lineTo(235,225);
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fill();            // Application du remplissage
+  ctx.closePath();
+  </script>
+  <a href="index2.html">exercice2</a>
+  <a href="index3.html">exercice3</a>
+</body>
+</html>

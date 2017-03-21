@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Canvas Fleur</title>
+</head>
+<body>
+  <canvas id="mon_canvas" width="600" height="600">
+    Fleur
+  </canvas>
+  <script>
+  var c = document.getElementById("mon_canvas");
+  var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.lineWidth="3";
+ctx.strokeStyle="black";
+ctx.moveTo(300,300);
+ctx.quadraticCurveTo(300,200,300,100);
+ctx.stroke();
+ctx.beginPath();
+ctx.lineWidth="3";
+ctx.strokeStyle="black";
+ctx.moveTo(100,100);
+ctx.quadraticCurveTo(200,100,300,300);
+ctx.moveTo(100,100);
+ctx.bezierCurveTo(200,200,100,300,300,300);
+ctx.stroke();
+ctx.closePath();
+ctx.fillStyle = "green";
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="yellow";//couleur remplissage
+ctx.arc(300,100,35,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(355,100,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(340,140,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(300,155,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(260,140,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(245,100,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(260,60,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(300,45,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.strokeStyle = "black";//couleur trait
+ctx.fillStyle="pink";//couleur remplissage
+ctx.arc(340,60,20,0,Math.PI*2);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath();
+ctx.lineWidth="3";
+ctx.strokeStyle="black";
+ctx.moveTo(300,300);
+ctx.quadraticCurveTo(500,30,500,150);
+ctx.quadraticCurveTo(500,300,300,300);
+ctx.stroke();
+ctx.closePath();
+ctx.fillStyle = "green";
+ctx.fill();
+
+
+</script>
+<a href="index.html">exercice1</a>
+<a href="index2.html">exercice2</a>
+<a href="index3.html">exercice3</a>
+</body>
+</html>

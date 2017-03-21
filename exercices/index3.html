@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Canvas Voiture</title>
+</head>
+<body>
+  <canvas id="mon_canvas" width="400" height="400">
+    Voiture
+  </canvas>
+  <script>
+  var c = document.getElementById("mon_canvas");
+  var ctx = c.getContext("2d");
+  // voiture
+  ctx.fillStyle = "#00B353";
+  ctx.fillRect(75,100,200,50);
+  ctx.fillRect(25,150,300,50);
+  //roues
+  ctx.beginPath();//début du chemin
+  ctx.strokeStyle = "black";//couleur trait
+  ctx.fillStyle="#CDCDCD";//couleur remplissage
+  ctx.arc(60,235,35,0,Math.PI*2);// arc( x, y, radius, Angle du début, Angle de fin formule math.PI*2 pour cercle)
+  ctx.stroke();
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(280,235,35,0,Math.PI*2);
+  ctx.stroke();
+  ctx.fill();
+  </script>
+  <a href="index.html">exercice1</a>
+  <a href="index2.html">exercice2</a>
+  <a href="index4.html">exercice4</a>
+</body>
+</html>
